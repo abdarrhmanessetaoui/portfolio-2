@@ -1,0 +1,8 @@
+.stroke {
+  -webkit-text-stroke: 3px #FF8C00;
+  -webkit-text-fill-color: transparent;
+}
+
+body.dark .theme {
+  filter: invert(1);
+}
