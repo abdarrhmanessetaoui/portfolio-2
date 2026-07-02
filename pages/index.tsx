@@ -100,18 +100,21 @@ const Home = () => {
                 custom={0.9}
                 className="flex items-center gap-4 mt-6"
               >
-                {socialLinks.map(({ icon: Icon, href, label }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                    className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all duration-300 hover:scale-110 hover:shadow-[0_0_12px_rgba(255,140,0,0.4)]"
-                  >
-                    <Icon size={18} />
-                  </a>
-                ))}
+                {socialLinks.map(({ icon: Icon, href, label }) => {
+                  const IconComponent = Icon as any;
+                  return (
+                    <a
+                      key={label}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={label}
+                      className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all duration-300 hover:scale-110 hover:shadow-[0_0_12px_rgba(255,140,0,0.4)]"
+                    >
+                      <IconComponent size={18} />
+                    </a>
+                  );
+                })}
               </motion.div>
             </div>
             <div className="md:space-x-16 justify-center items-center md:flex">
