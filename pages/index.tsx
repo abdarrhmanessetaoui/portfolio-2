@@ -66,18 +66,33 @@ const Home = () => {
                   />
                 </div>
               </motion.h1>
-              <Link href="/work">
-                <motion.button
+              <div className="flex flex-wrap gap-4 items-center mt-8 place-self-start self-start">
+                <Link href="/work">
+                  <motion.button
+                    initial="hidden"
+                    animate="visible"
+                    variants={slideUp}
+                    whileTap={{ scale: 0.9 }}
+                    custom={0.6}
+                    className={`${styles.btn} focus:outline-none relative px-6 py-2 font-semibold text-md font-main capitalize rounded bg-primary text-black`}
+                  >
+                    <a>view work</a>
+                  </motion.button>
+                </Link>
+                <motion.a
                   initial="hidden"
                   animate="visible"
                   variants={slideUp}
                   whileTap={{ scale: 0.9 }}
-                  custom={0.6}
-                  className={`${styles.btn} focus:outline-none mt-8 place-self-start relative self-start align-start px-6 py-2 font-semibold text-md font-main capitalize rounded bg-primary`}
+                  custom={0.7}
+                  href="/cvats2026.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.btn} focus:outline-none relative px-6 py-2 font-semibold text-md font-main capitalize rounded bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 block`}
                 >
-                  <a>view work</a>
-                </motion.button>
-              </Link>
+                  download cv
+                </motion.a>
+              </div>
               <motion.div
                 initial="hidden"
                 animate="visible"
