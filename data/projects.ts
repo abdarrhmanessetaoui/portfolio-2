@@ -1,5 +1,27 @@
 export const projects = [
   {
+    id: "livreia-project-id",
+    category: "Full Stack",
+    name: "LivreIA",
+    img: "/book.png",
+    linkToPage: "https://livreia.vercel.app/",
+    linkToSrc: "https://github.com/abdarrhmanessetaoui/LivreIA",
+    description: "Transform your reading experience with AI-powered voice conversations.",
+    tools: ["Next.js", "React", "Tailwind CSS", "MongoDB", "Clerk", "Vapi AI"],
+    imgs: [
+      "/book.png",
+      "/book1.png",
+      "/book2.png",
+      "/book3.png",
+      "/book4.png",
+      "/book5.png",
+      "/book6.png",
+      "/book7.png",
+      "/book8.png",
+      "/book9.png"
+    ]
+  },
+  {
     id: "a1b2c3d4-e5f6-7890-1234-hotelia",
     category: "Web App",
     name: "Hotelia",
@@ -36,7 +58,7 @@ export const projects = [
     category: "Web App",
     name: "Portfolio 1",
     img: "/portfolio1.png",
-    linkToPage: "https://abderrhmansettaoui.netlify.app/",
+    linkToPage: "https://abderrhmansettaouii.netlify.app/",
     linkToSrc: "https://github.com/abdarrhmanessetaoui/portfolio-site",
     description: "Personal Portfolio Website",
     tools: ["HTML", "CSS", "Bootstrap", "JavaScript"],

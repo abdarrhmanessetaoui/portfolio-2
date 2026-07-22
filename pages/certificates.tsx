@@ -8,6 +8,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const certificates = [
   {
+    id: "cert-3",
+    name: "TypeScript Basics",
+    issuer: "Simplilearn SkillUp",
+    img: "/certificate3.png",
+    link: "https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIzMTE5IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvMTA0NDUxNThfMTA3NDE2MzZfMTc4MzU4NzMxMTU4MC5wbmciLCJ1c2VybmFtZSI6IkFCREVSUkFITUFOIFNFVFRBT1VJIn0%3D&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F5896%2FTypescript-Basics%2Fcertificate%2Fdownload-skillup&%24web_only=true",
+  },
+  {
     id: "cert-1",
     name: "Introduction to Software Engineering",
     issuer: "Coursera",
