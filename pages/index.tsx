@@ -37,8 +37,8 @@ const Home = () => {
           full-stack
         </motion.h1>
         <div className="relative max-w-screen-lg px-2 w-full mx-auto">
-          <div className="md:grid md:grid-cols-auto-2 xl:gap-0 md:gap-12 gap-4 items-center">
-            <div className="flex flex-col items-start">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-auto-2 xl:gap-0 md:gap-12 gap-12 items-center">
+            <div className="flex flex-col items-start w-full">
               <motion.h1
                 initial="hidden"
                 animate="visible"
@@ -117,7 +117,7 @@ const Home = () => {
                 })}
               </motion.div>
             </div>
-            <div className="md:space-x-16 justify-center items-center md:flex">
+            <div className="flex justify-center items-center mb-8 md:mb-0 md:space-x-16">
               <motion.div
                 initial="hidden"
                 animate="visible"
