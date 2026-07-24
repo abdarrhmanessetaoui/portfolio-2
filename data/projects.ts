@@ -144,5 +144,18 @@ export const projects = [
     imgs: [
       "/githubfinder.png"
     ]
+  },
+  {
+    id: "yt2mp3-project-id",
+    category: "Web App",
+    name: "YT2MP3",
+    img: "/yt2mp3.png",
+    linkToPage: "https://yt2mp3.fly.dev/",
+    linkToSrc: "https://github.com/abdarrhmanessetaoui/YT2MP3",
+    description: "Convert YouTube videos to MP3 audio files online",
+    tools: ["Node.js", "Express", "EJS", "yt-dlp"],
+    imgs: [
+      "/yt2mp3.png"
+    ]
   }
 ];
